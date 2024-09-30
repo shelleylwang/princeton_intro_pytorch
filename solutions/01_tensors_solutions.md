@@ -9,6 +9,18 @@ mytensor.device
 device(type='cpu')
 ```
 
+```
+# My Code:
+
+three = torch.rand(3, 3, dtype = float) * 4 + 1
+three
+
+if three.device == 'cpu':
+  three = three.to("cuda")
+
+three.device
+```
+
 ### Exercise 01.2
 
 ```
